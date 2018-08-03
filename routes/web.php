@@ -87,4 +87,5 @@ Route::group(['middleware' => ['auth','admin']], function(){
 
 //Nopparuj
 //ekkachi
+//jarukit
 
