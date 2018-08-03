@@ -85,4 +85,6 @@ Route::group(['middleware' => ['auth','admin']], function(){
     Route::get('/sendmail/{id}','ManagestoreController@sendmail');
 });
 
+//Nopparuj
+
 
