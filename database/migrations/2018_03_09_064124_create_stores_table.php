@@ -24,6 +24,7 @@ class CreateStoresTable extends Migration
             $table->string('timeopen');
             $table->string('timeclose');
             $table->string('profilestore');
+
             $table->double('lat',20,10);
             $table->double('lng',20,10);
             $table->timestamps();

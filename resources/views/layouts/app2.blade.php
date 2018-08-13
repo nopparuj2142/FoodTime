@@ -55,7 +55,7 @@
         $Lng = 0;
             
     ?>
-        @include('inc.navbar')   
+        @include('inc.navbar1')   
     {{-- @include('inc.header') --}}
   
     <div class="principal1">

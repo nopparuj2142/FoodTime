@@ -35,7 +35,7 @@
     {{-- API TEST --}}
     {{-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA23pRj3Ff6w2SAOjyBMfQfcRhR_aHkZgY&libraries=places"></script> --}}
     {{-- API BOND --}}
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA23pRj3Ff6w2SAOjyBMfQfcRhR_aHkZgY&libraries=places" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEteZkB8_FQGeVwCxy03HjA2Bn5Lvo_cA&libraries=places" type="text/javascript"></script>
     {{-- API KIT --}}
     {{-- <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAEu3YReq4Zfqt1nW-ZhbH8cItn0mfL_GQ&libraries=places" type="text/javascript"></script> --}}
 
