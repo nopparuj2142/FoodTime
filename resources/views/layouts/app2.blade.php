@@ -36,7 +36,12 @@
     {{-- ใหม่ --}}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     {{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> --}}
-    <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyA23pRj3Ff6w2SAOjyBMfQfcRhR_aHkZgY &libraries=places" type="text/javascript"></script>
+    
+    {{-- API BOND --}}
+    {{-- <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyA23pRj3Ff6w2SAOjyBMfQfcRhR_aHkZgY &libraries=places" type="text/javascript"></script> --}}
+    {{-- API KIT --}}
+    <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAEu3YReq4Zfqt1nW-ZhbH8cItn0mfL_GQ &libraries=places" type="text/javascript"></script>
+    
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
  

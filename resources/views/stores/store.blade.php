@@ -57,17 +57,35 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                <div class="form-group">
-                    <div class="col-md-4">
-                        <label class="control-label col-sm-6" for="location">ตำแหน่ง:</label>
-                        <div class="col-md-6">
-                            <div id="map-canvas" style="width:465px; height:250px;"></div>
-                            <input type="hidden"  class="form-control input-sm" name="lat" id="lat">
-                            <input type="hidden" class="form-control input-sm" name="lng" id="lng">
-                        </div>
-                    </div> 
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label class="control-label col-sm-6" for="location">ตำแหน่ง:</label>
+                            <div class="col-md-6">
+                                <div id="map-canvas" style="width:465px; height:250px;"></div>
+                                <input type="hidden"  class="form-control input-sm" name="lat" id="lat">
+                                <input type="hidden" class="form-control input-sm" name="lng" id="lng">
+                            </div>
+                        </div> 
+                    </div>
                 </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label class="control-label col-sm-6" for="vdo">วีดิทัศน์:</label>
+                            <div class="col-md-6">
+                                <iframe 
+                                    style="width:465px; height:250px;"
+                                    frameborder="0"  
+                                    src="https://www.youtube.com/embed/jc121_3KiKg?">
+                                </iframe>
+                            </div>
+                        </div> 
+                    </div>
                 </div>
+
+                
+
             </div>
         </form>
         <hr>
