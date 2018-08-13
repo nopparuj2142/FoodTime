@@ -21,7 +21,7 @@
 }
 .principal{
     left: 50% ;
-    top: 50% ;
+    top: 13% ; 
     transform: translate(-50%,-50%);
     position: absolute;
     letter-spacing: 5px;
@@ -29,6 +29,18 @@
     margin-left: 240px; 
     margin-top: 30px;
 }
+
+.principal1{
+
+    top: 7% ; 
+    transform: translate(-50%,-50%);
+    position: absolute;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-left: 200px; 
+    margin-top: 30px;
+}
+
 .principal h1{
     font-size: 70px;
     margin-bottom: 20px;

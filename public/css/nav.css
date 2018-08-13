@@ -27,4 +27,8 @@ header{
     top: 0;
     left: 0;
     width: 100%;
+ 
+}
+.navbar-default{
+    background-color: transparent;
 }

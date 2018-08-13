@@ -1,5 +1,7 @@
+<header>
 <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
+        {{-- <nav class="navbar navbar-toggleable-sm navbar-trans navbar-inverse"> --}}
             <div class="container">
                 <div class="navbar-header">
 
@@ -13,16 +15,16 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/dashboard') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        {{-- {{ config('app.name', 'Laravel') }} --}}
                     </a>
                 </div>
-
+        
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                         <li class="{{Request::is('dashboard') ? 'active' : ''}}">
                              <a href="/dashboard" style="padding-left:50px;">
-                                <img src="/uploads/icon/home.png" style="width:250px; height:200px; position:absolute; top:10px; left:10px; ">
+                                <img src="/uploads/icon/home.png" style="width:28px; height:28px; position:absolute; top:10px; left:10px; ">
                                 หน้าแรก</a>
                         </li>
                         {{-- <li class="{{Request::is('promotions') ? 'active' : ''}}">
@@ -119,4 +121,4 @@
                 </div>
             </div>
         </nav>
-      
+<header>

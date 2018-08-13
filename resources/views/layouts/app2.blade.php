@@ -21,10 +21,10 @@
     {{-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> --}}
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app1.css') }}" rel="stylesheet">
     <link href="vendor/bootstrap/css/bootstrap1.min.css" rel="stylesheet">
     {{-- <link href="css/modern-business.css" rel="stylesheet"> --}}
-    <link href="css/app.css" rel="stylesheet">
+    {{-- <link href="css/app.css" rel="stylesheet"> --}}
     <link href="css/slide.css" rel="stylesheet">
     <link href="css/nav.css" rel="stylesheet">
 
@@ -50,8 +50,13 @@
         $Lng = 0;
             
     ?>
-        {{-- @include('inc.navbar')    --}}
-    @include('inc.header')
+        @include('inc.navbar')   
+    {{-- @include('inc.header') --}}
+  
+    <div class="principal1">
+            <a href="/"><img src="img/logo/logo1.png" style="width:224px; height:230px; "></a>
+    </div>
+
     <div class="principal">
        <a href="/about"> <img src="img/text5.png" style="width:579px; height:399px;"></a>
     </div>
@@ -60,9 +65,9 @@
             </div>
         </div>
     {{-- @include('inc.header') --}}
-    @yield('content')
 
-    @include('inc.footer')
+    @yield('content')
+   
     </div>
   
     @yield('script')
