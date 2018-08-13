@@ -22,7 +22,7 @@
                     <ul class="nav navbar-nav">
                         <li class="{{Request::is('dashboard') ? 'active' : ''}}">
                              <a href="/dashboard" style="padding-left:50px;">
-                                <img src="/uploads/icon/home.png" style="width:28px; height:28px; position:absolute; top:10px; left:10px; ">
+                                <img src="/uploads/icon/home.png" style="width:250px; height:200px; position:absolute; top:10px; left:10px; ">
                                 หน้าแรก</a>
                         </li>
                         {{-- <li class="{{Request::is('promotions') ? 'active' : ''}}">

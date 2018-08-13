@@ -1,0 +1,30 @@
+/* .main-menu-area{} */
+.logo{margin-top: 30px;}
+.logo a{
+    color: #ffffff;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 700;
+    /* margin-top: 18px; */
+    text-transform: uppercase;
+}
+/* .main-menu{} */
+/* .main-menu ul{} */
+.main-menu ul li{
+    display: inline-block;
+}
+.main-menu ul li a {
+    color: #ffffff;
+    display: block;
+    font-weight: 700;
+    padding: 30px 20px;
+    text-transform: uppercase;
+}
+.single-slider{height: 100vh}
+/* .slider-title{} */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
