@@ -176,7 +176,8 @@
         },
         zoom:10
         });
-
+    
+    
     var marker = new google.maps.Marker({
         position:{
             lat:<?=$select->lat;?>,

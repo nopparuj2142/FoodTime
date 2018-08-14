@@ -1,13 +1,11 @@
-@extends('layouts.appregis')
+@extends('layouts.app')
 
-@section('contentregis')
-<div class="container2">
+@section('content')
+<div class="container">
     <div class="row">
-        <div class="col-md-6 col-md-offset-6">
+        <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                    <center><div class="panel-heading">
-                            <label>สมัครสมาชิก</label>
-                            </div></center>
+                <div class="panel-heading">สมัครสมาชิก</div>
 
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
@@ -17,7 +15,7 @@
                             <label for="name" class="col-md-4 control-label">ชื่อผู่ใช้</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control" name="name" placeholder="ชื่อผู้ใช้" value="{{ old('name') }}" required autofocus>
+                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
 
                                 @if ($errors->has('name'))
                                     <span class="help-block">
@@ -31,7 +29,7 @@
                             <label for="email" class="col-md-4 control-label">ที่อยู่อีเมล์</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" placeholder="ที่อยู่อีเมล์" value="{{ old('email') }}" required>
+                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
 
                                 @if ($errors->has('email'))
                                     <span class="help-block">
@@ -45,7 +43,7 @@
                             <label for="password" class="col-md-4 control-label">รหัสผ่าน</label>
 
                             <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password" placeholder="รหัสผ่าน" required>
+                                <input id="password" type="password" class="form-control" name="password" required>
 
                                 @if ($errors->has('password'))
                                     <span class="help-block">
@@ -59,7 +57,7 @@
                             <label for="password-confirm" class="col-md-4 control-label">ยืนยันรหัสผ่าน</label>
 
                             <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" placeholder="ยืนยันรหัสผ่าน" name="password_confirmation" required>
+                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
                         </div>
 
