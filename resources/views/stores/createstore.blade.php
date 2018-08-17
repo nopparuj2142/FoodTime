@@ -60,6 +60,13 @@
                 </div>
             </div>
 {{-- Time End --}}
+            <div class="form-group">                
+                {!! Form::label('urlvideo','ลิ้งค์รีวิวร้าน',['class'=>'control-label col-md-2']) !!}
+                <div class="col-md-10">                    
+                    {!! Form::text('urlvideo',null,['class'=>'form-control']) !!}
+                    {!! $errors->has('urlvideo')?$errors->first('urlvideo'):'' !!}
+                </div>
+            </div>
              <div class="form-group">              
                 {!! Form::label('location','ตำแหน่งที่ตั้ง',['class'=>'control-label col-md-2']) !!}
                  <div class="col-md-10"> 

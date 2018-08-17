@@ -71,6 +71,7 @@ class StoreController extends Controller
         $insert->timeclose = $request->timeclose;
         $insert->lat = $request->lat;
         $insert->lng = $request->lng;
+        $insert->urlvideo = $request->urlvideo;
         if($request->hasfile('picstore')){
             $picstore = $request->file('picstore');
             $filename = time() . '.' . $picstore->getClientOriginalExtension();
@@ -167,7 +168,8 @@ class StoreController extends Controller
             'detail'=>'Required',
             'address'=>'Required',
             'timeopen'=>'Required',
-            'timeclose'=>'Required'
+            'timeclose'=>'Required',
+            'urlvideo'=>'Required'
         ]);
         // $store = Store::where('stores.id_store','=',$id)->first();
         
@@ -200,7 +202,8 @@ class StoreController extends Controller
                 'id_typestore' => $request->type,
                 'lat' => $request->lat,
                 'lng' => $request->lng,
-                'profilestore' => $image
+                'profilestore' => $image,
+                'urlvideo' => $urlvideo
             ]);
         return redirect('stores');
     }
