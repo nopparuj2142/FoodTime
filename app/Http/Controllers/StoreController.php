@@ -59,7 +59,8 @@ class StoreController extends Controller
             'detail'=>'required',
             'address'=>'required',
             'timeopen'=>'required',
-            'timeclose'=>'required'
+            'timeclose'=>'required',
+            'urlvideo'=>'required'
         ]);
         $insert = new Store;
         $insert->id_user = auth()->user()->id;
@@ -69,6 +70,7 @@ class StoreController extends Controller
         $insert->address = $request->address;
         $insert->timeopen = $request->timeopen;
         $insert->timeclose = $request->timeclose;
+        $insert->urlvideo = $request->urlvideo;
         $insert->lat = $request->lat;
         $insert->lng = $request->lng;
         if($request->hasfile('picstore')){
@@ -98,7 +100,7 @@ class StoreController extends Controller
         ->where('stores.id_store','=',$id)
         ->select('stores.*','typestore.typename')
         ->first();
-        //dd($select);
+        // dd($select);
         
 
         $foods = Food::where('id_store','=',$id)
@@ -150,6 +152,8 @@ class StoreController extends Controller
         ->select('stores.*','typestore.typename')
         ->first();
         $typestores = Typestore::all();
+        // dd($select);
+
         return view('stores.editstore', compact('select','typestores'));
     }
 
@@ -162,9 +166,12 @@ class StoreController extends Controller
      */
     public function update(Request $request, $id)
     {
+        
+
         $this->validate($request,[
             'namestore'=>'Required',
             'detail'=>'Required',
+            'urlvideo'=>'Required',
             'address'=>'Required',
             'timeopen'=>'Required',
             'timeclose'=>'Required'
@@ -178,6 +185,8 @@ class StoreController extends Controller
         // $store->lat = $request->lat;
         // $store->lng = $request->lng;
 
+        
+
         $image = null;
         if($request->hasfile('picstore')){
             $picstore = $request->file('picstore');
@@ -190,10 +199,12 @@ class StoreController extends Controller
         }
         // $store->save();
 
+        
         $store = Store::where('id_store',$id)
             ->update([
                 'namestore' => $request->namestore,
                 'detail' => $request->detail,
+                'urlvideo' => $request->urlvideo,
                 'address' => $request->address,
                 'timeopen' => $request->timeopen,
                 'timeclose' => $request->timeclose,

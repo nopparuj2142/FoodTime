@@ -40,6 +40,13 @@
                 </div>
             </div>
             <div class="form-group">              
+                {!! Form::label('urlvideo','แปะลิงค์วีดิทัศน์',['class'=>'control-label col-md-2']) !!}
+                <div class="col-md-10">
+                    {!! Form::text('urlvideo',null,['class'=>'form-control','rows'=>'3']) !!}
+                    {!! $errors->has('urlvideo')?$errors->first('urlvideo'):'' !!}
+                </div>
+            </div>
+            <div class="form-group">              
                 {!! Form::label('address','ที่อยู่',['class'=>'control-label col-md-2']) !!}
                 <div class="col-md-10">
                     {!! Form::textarea('address',null,['class'=>'form-control','rows'=>'3']) !!}
