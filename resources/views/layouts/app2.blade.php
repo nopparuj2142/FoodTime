@@ -57,19 +57,27 @@
     ?>
         @include('inc.navbar1')   
     {{-- @include('inc.header') --}}
-  
-    <div class="principal1">
-            <a href="/"><img src="img/logo/logo1.png" style="width:224px; height:230px; "></a>
-    </div>
+    <div class="slider">
+            <div class="load">
+                <div class="content">
+                        <div class="principal1">
+                                <a href="/"><img src="img/logo/logo1.png" style="width:270px; height:280px; "></a>
+                        </div>
 
-    <div class="principal">
-       <a href="/about"> <img src="img/text5.png" style="width:579px; height:399px;"></a>
-    </div>
-    <div class="slider-area">
-            <div class="single-slider" style="background-image:url(img/bg/nungchill.jpg)">
+                        <div class="principal">
+                        <a href="/about"> <img src="img/text5.png" style="width:579px; height:399px;"></a>
+                        </div>
             </div>
         </div>
-    {{-- @include('inc.header') --}}
+    </div>
+
+
+   
+    {{-- <div class="slider-area">
+            <div class="single-slider" style="background-image:url(img/bg/nungchill.jpg)">
+            </div>
+        </div> --}}
+    
 
     @yield('content')
    

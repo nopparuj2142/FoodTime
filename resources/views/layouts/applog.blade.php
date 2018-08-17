@@ -21,12 +21,14 @@
     {{-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> --}}
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    {{-- <link href="vendor/bootstrap/css/bootstrap1.min.css" rel="stylesheet"> --}}
-    {{-- <link href="css/bg.css" rel="stylesheet"> --}}
-     {{-- <link href="css/nav.css" rel="stylesheet"> --}}
-    {{-- <link href="{{ asset('css/bg.css') }}" rel="stylesheet"> --}}
-    
+    <link href="{{ asset('css/app1.css') }}" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap1.min.css" rel="stylesheet">
+    {{-- <link href="css/modern-business.css" rel="stylesheet"> --}}
+    {{-- <link href="css/app.css" rel="stylesheet"> --}}
+    <link href="css/slide.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.1/bootstrap3-typeahead.min.js"></script>  
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -35,16 +37,10 @@
     {{-- ใหม่ --}}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     {{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> --}}
-
-    {{-- API TEST --}}
-    {{-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA23pRj3Ff6w2SAOjyBMfQfcRhR_aHkZgY&libraries=places"></script> --}}
-    {{-- API BOND --}}
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEteZkB8_FQGeVwCxy03HjA2Bn5Lvo_cA&libraries=places" type="text/javascript"></script>
-    {{-- API KIT --}}
-    {{-- <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAEu3YReq4Zfqt1nW-ZhbH8cItn0mfL_GQ&libraries=places" type="text/javascript"></script> --}}
-
+    <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyA23pRj3Ff6w2SAOjyBMfQfcRhR_aHkZgY &libraries=places" type="text/javascript"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+    
+ 
 
 
 </head>
@@ -55,17 +51,30 @@
         $Lng = 0;
             
     ?>
-    @include('inc.navbar')
-
-    
-
-
-    @yield('content')
-
-    @include('inc.footer')
-    </div>
-  
+    {{-- <div class="slider-area">
+            <div class="single-slider" style="background-image:url(img/bg/nungchill.jpg">
+              
+            </div>
+        </div>
+         --}}
+        <div class="container3">
+            <div class="bg1">
+                 
+                    @include('inc.navbar1')   
+                    @yield('contentlogin')  
+                    
+                    <div class="content">
+                            <div class="principal3">
+                            <a href="/about"> <img src="img/text5.png" style="width:579px; height:399px;"></a>
+                            </div>
+                    </div>
+                   
+            </div>
+        </div>
+       
     @yield('script')
-
+   
+    
 </body>
+
 </html>
