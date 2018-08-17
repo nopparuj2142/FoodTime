@@ -77,7 +77,7 @@
                                 <iframe 
                                     style="width:465px; height:250px;"
                                     frameborder="0"  
-                                    src="https://www.youtube.com/embed/jc121_3KiKg?">
+                                    src="{{$select->urlvideo}}">
                                 </iframe>
                             </div>
                         </div> 
