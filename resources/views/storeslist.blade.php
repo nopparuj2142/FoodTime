@@ -21,8 +21,8 @@
                     <a href="#">
                         <img class="img-responsive" src="/uploads/profilestore/{{$i->profilestore}}">
                     </a>
-                    <h2>{{$i->namestore}}</h2>
-                    <p>{{$i->detail}}</p>
+                   <h2> <p>{{str_limit($i->namestore,16,'...')}}</p> </h2>
+                    <p>{{str_limit($i->detail,100,'. . .')}}</p>
                 <p><a class="btn btn-primary" href="{{ route('stores.show',$i->id_store)}}" role="button">ดูเพิ่มเติม &raquo;>
                 </a></p>
                 </div>

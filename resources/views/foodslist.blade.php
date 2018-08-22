@@ -72,8 +72,8 @@
                     <a href="#">
                         <img class="img-responsive" src="/uploads/foodpicture/{{$i->picturefood}}">
                     </a>
-                    <h2>{{$i->namefood}}</h2>
-                    <p>{{$i->detail}}</p>
+                   <h2> <p>{{str_limit($i->namefood,16,'...')}}</p></h2>
+                    <p>{{str_limit($i->detail,100,'. . .')}}</p>
                     <p><a class="btn btn-primary" href="/food/{{$i->id}}" role="button">ดูเพิ่มเติม &raquo;</a></p>
                     
                 </div>
